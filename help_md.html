@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!DOCTYPE border-collapse>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown教程</title>
+    <link rel="stylesheet" type="text/css" href="css/_main.css">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main-box">
+        <div id="1">
+            <div class="main-title">Markdown 基本语法</div>
+            <h2 class="title">Markdown 标题</h1>
+            <p>
+                在Markdown中，创建标题是在标题前面添加井号（"<span class="biaoji">#</span>"）。
+                <span class="biaoji">#</span>的数量代表了标题的级别。例如，添加三个<span class="biaoji">#</span>
+                表示创建一个三级标题（<span class="biaoji"><<!---->h3></span>）<br>
+                例如：<span class="biaoji">### 我是三级标题</span>
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Markdown</td>
+                        <td>HTML</td>
+                        <td>效果</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="body">
+                        <th><span class="biaoji"># 我是标题</span></th>
+                        <th><span class="biaoji"><<!---->h1>我是标题<<!---->/h1></span></th>
+                        <th><h1>我是标题</h1></th>
+                    </tr>
+
+                    <tr class="body">
+                        <th class="list-biaoji"><span class="biaoji">## 我是标题</span></th>
+                        <th class="list-biaoji"><span class="biaoji"><<!---->h2>我是标题<<!---->/h2></span></th>
+                        <th class="list-biaoji"><h2>我是标题</h2></th>
+                    </tr>
+
+                    <tr class="body">
+                        <th><span class="biaoji">### 我是标题</span></th>
+                        <th><span class="biaoji"><<!---->h3>我是标题<<!---->/h3></span></th>
+                        <th><h3>我是标题</h3></th>
+                    </tr>
+
+                    <tr class="body">
+                        <th class="list-biaoji"><span class="biaoji">#### 我是标题</span></th>
+                        <th class="list-biaoji"><span class="biaoji"><<!---->h4>我是标题<<!---->/h4></span></th>
+                        <th class="list-biaoji"><h4>我是标题</h4></th>
+                    </tr>
+
+                    <tr class="body">
+                        <th><span class="biaoji">##### 我是标题</span></th>
+                        <th><span class="biaoji"><<!---->h5>我是标题<<!---->/h5></span></th>
+                        <th><h5>我是标题</h5></th>
+                    </tr>
+
+                    <tr class="body">
+                        <th class="list-biaoji"><span class="biaoji">###### 我是标题</span></th>
+                        <th class="list-biaoji"><span class="biaoji"><<!---->h6>我是标题<<!---->/h6></span></th>
+                        <th class="list-biaoji"><h6>我是标题</h6></th>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="title">或者...</h2>
+            <p>还可以在标题下方输入任意数量的 <span class="biaoji">==</span> 号来标识一级标题，
+                或用 <span class="biaoji">--</span> 来标识二级标题。
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Markdown</td>
+                        <td>HTML</td>
+                        <td>效果</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="body">
+                        <th><span class="biaoji">我是标题<br>==========</span></th>
+                        <th><span class="biaoji"><<!---->h1>我是标题<<!---->/h1></span></th>
+                        <th><h1>我是标题</h1></th>
+                    </tr>
+
+                    <tr class="body">
+                        <th class="list-biaoji"><span class="biaoji">我是标题<br>------------------</span></th>
+                        <th class="list-biaoji"><span class="biaoji"><<!---->h2>我是标题<<!---->/h2></span></th>
+                        <th class="list-biaoji"><h2>我是标题</h2></th>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="title" style="color: red;">注意</h2>
+            <p>不同的平台处理标题前的<span class="biaoji"> # </span>需不需要空格的方式不一致。
+                最好使用一个空格在<span class="biaoji"> # </span>与标题之间进行分隔。</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>✅ 正确示范</td>
+                            <td>❌ 错误示范</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="body">
+                            <th><span class="biaoji"># 这是标题</span></th>
+                            <th><span class="biaoji">#这是标题</span></th>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <!--换行区--> <br><br><br><br>
+        <div id="2">
+            <h2 class="title">Markdown中的段落</h2>
+            <p>一般使用空白行来分割段落，比如说：</p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Markdown</td>
+                        <td>HTML</td>
+                        <td>效果</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="body">
+                        <th><span class="biaoji">我是一个段落<br><br>我也是一个段落</span></th>
+                        <th><span class="biaoji"><<!---->p>我是一个段落<<!---->/p><br><br><<!---->p>我也是一个段落<<!---->/p></span></th>
+                        <th>我是一个段落<br><br>我也是一个段落</th>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="title" style="color: red;">注意</h2>
+            <p>不要用空格或制表符（Tab）缩进段落。</p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>✅ 正确示范</td>
+                        <td>❌ 错误示范</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="body">
+                        <th><span class="biaoji">我是一个段落<br><br>我也是一个段落</span></th>
+                        <th><span class="biaoji">&nbsp;&nbsp;我是一个段落<br><br>&nbsp;&nbsp;&nbsp;&nbsp;我也是一个段落</span></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br><br><br><br>
+        <div id="3">
+            <h2 class="title">Markdown中的换行</h2>
+            <p>在一行末尾添加2个或2个以上的空格，然后按回车键，即可换行（或使用<span class="biaoji"><<!---->br></span>）</p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Markdown</td>
+                        <td>HTML</td>
+                        <td>效果</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="body">
+                        <th><span class="biaoji">我是一行文字。<br>我也是一行文字。</span></th>
+                        <th><span class="biaoji"><<!---->p>我是一行文字。<<!---->br><br>我也是一行文字<<!---->/p></span></th>
+                        <th>我是一行文字。<br>我也是一行文字。</th>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="title" style="color: red;">注意</h2>
+            <p>几乎每个 Markdown 应用程序都支持两个或多个空格进行换行，称为<span class="biaoji"> 结尾空格（trailing whitespace）</span>。
+                但最好使用其他方式，因为很难在编辑器中直接看到空格。幸运的是，几乎每个 Markdown 应用程序都支持另一种换行方式：HTML 的
+                <span class="biaoji"> <<!---->br> </span>标签。
+                <br><br>
+                为了方便看见或兼容性，最好在行尾添加“结尾空格”或 HTML 的<span class="biaoji"> <<!---->br> </span>标签来换行。
+                <br><br>
+                还有两种其他方式我并不推荐使用。CommonMark 和其它几种轻量级标记语言支持在行尾添加反斜杠(<span class="biaoji"> \ </span>)
+                的方式进行换行，但是并非所有 Markdown 应用程序都支持此种方式，因此从兼容性的角度来看，不推荐使用。
+                至少有两种轻量级标记语言支持无须在行尾添加任何内容，只须键入回车键即可实现换行。
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>✅ 正确示范</td>
+                        <td>❌ 错误示范</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="body">
+                        <th><span class="biaoji">使用两个空格来换行。&nbsp;&nbsp;<br>我是下一行。</span>
+                            <br><br>
+                            <span class="biaoji">使用 HTML 中的 <<!---->br> 标签来换行。<<!---->br><br>我是下一行。</span>
+                        </th>
+                        <th><span class="biaoji">使用反斜杠来换行。\<br>我是下一行。</span>
+                            <br><br>
+                            <span class="biaoji">直接按回车来换行。<br>我是下一行。</span>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br><br><br><br>
+        <div id="4">
+            <h2 class="title">Markdown中的强调语法</h2>
+            <p>通过将文本设置为粗体或斜体来强调其重要性。</p><br>
+            <h2 class="title">粗体（Bold）</h2>
+            <p>要加粗文本，一般在要加粗文本的前后各添加两个星号（asterisks）或两个下划线（underscores）。
+                如果想要加粗的文本在其他文本的中间部分用于强调时，请在要加粗部分的两侧各添加两个星号或两个下划线。</p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Markdown</td>
+                        <td>HTML</td>
+                        <td>效果</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="body">
+                        <th><span class="biaoji">我是文字，**我是加粗部分**</span></th>
+                        <th><span class="biaoji">我是文字,<<!---->strong>我是加粗部分<<!---->/strong></span></th>
+                        <th>我是文字，<strong>我是加粗部分</strong></th>
+                    </tr>
+                    <tr class="body">
+                        <th><span class="biaoji">我是文字，__我是加粗部分__</span></th>
+                        <th><span class="biaoji">我是文字,<<!---->strong>我是加粗部分<<!---->/strong></span></th>
+                        <th>我是文字，<strong>我是加粗部分</strong></th>
+                    </tr>
+                    <tr class="body">
+                        <th><span class="biaoji">我是文字，__我是加粗部分__,我是文字</span></th>
+                        <th><span class="biaoji">我是文字,<<!---->strong>我是加粗部分<<!---->/strong>,我是文字</span></th>
+                        <th>我是文字，<strong>我是加粗部分</strong>,我是文字</th>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="title" style="color: red;">注意</h2>
+            <p>各个平台在处理文字中间的下划线是否加粗并不一致。为兼容考虑，最好使用星号加粗</p>
+        </div>
+    </div>
+</body>
+</html>
