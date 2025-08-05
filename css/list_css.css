@@ -1,0 +1,15 @@
+/*表格灵魂*/
+table, td, th ,tbody{
+    border: 1px solid black;
+    border-color: rgba(128, 128, 128, 0.4);
+}
+.list-biaoji{
+    background-color: rgba(128, 128, 128, 0.192);
+}
+table {
+    border-collapse: collapse;
+}
+.biaoji{
+    background-color: rgba(128, 128, 128, 0.281);
+    font-size: 16px;
+}
